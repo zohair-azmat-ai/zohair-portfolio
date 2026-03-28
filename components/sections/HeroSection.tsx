@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Container from "@/components/layout/Container";
+
 import Button from "@/components/ui/Button";
 import { siteConfig } from "@/data/portfolio";
 
@@ -11,7 +11,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden min-h-[620px] lg:min-h-[650px] py-20 sm:py-28 lg:py-32">
+    <section className="relative overflow-hidden min-h-[620px] lg:min-h-[650px]">
 
       {/* ── Full background image (FIXED) ── */}
       <img
@@ -26,8 +26,8 @@ export default function HeroSection() {
       {/* ── Radial glow accent ── */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.18),transparent_55%)]" />
 
-      <Container>
-        <div className="relative z-10 flex max-w-2xl flex-col gap-9">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-10 flex flex-col justify-start">
+        <div className="flex max-w-2xl flex-col gap-9">
 
           {/* Badge */}
           <div className="flex animate-fade-up">
@@ -87,7 +87,7 @@ export default function HeroSection() {
           </div>
 
         </div>
-      </Container>
+      </div>
     </section>
   );
 }
