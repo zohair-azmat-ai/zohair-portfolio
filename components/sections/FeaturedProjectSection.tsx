@@ -98,6 +98,8 @@ export default function FeaturedProjectSection() {
                 {featuredProject.links.liveFrontend && (
                   <Button
                     href={featuredProject.links.liveFrontend}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-5 py-2.5 text-sm"
                   >
                     Live Demo →
@@ -107,6 +109,8 @@ export default function FeaturedProjectSection() {
                   <Button
                     href={featuredProject.links.liveApi}
                     variant="outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-5 py-2.5 text-sm"
                   >
                     Live API
@@ -116,6 +120,8 @@ export default function FeaturedProjectSection() {
                   <Button
                     href={featuredProject.links.github}
                     variant="outline"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-5 py-2.5 text-sm"
                   >
                     GitHub

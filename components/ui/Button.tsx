@@ -3,6 +3,8 @@ import { cn } from "@/lib/utils";
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "primary" | "outline";
   href?: string;
+  target?: string;
+  rel?: string;
 };
 
 export default function Button({
@@ -10,6 +12,8 @@ export default function Button({
   className,
   variant = "primary",
   href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   const base =
@@ -22,7 +26,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={cn(base, variants[variant], className)}>
+      <a href={href} target={target} rel={rel} className={cn(base, variants[variant], className)}>
         {children}
       </a>
     );

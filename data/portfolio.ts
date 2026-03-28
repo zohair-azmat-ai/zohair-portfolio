@@ -67,8 +67,8 @@ export const projects: Project[] = [
     tags: ["Next.js", "FastAPI", "PostgreSQL", "OpenAI", "Tailwind CSS"],
     links: {
       liveFrontend: "https://supportpilot-ai-digital-fte.vercel.app/",
-      liveApi: "https://supportpilot-ai-digital-fte.vercel.app/",
-      github: "https://github.com/zohair-azmat-ai/zohair-portfolio",
+      liveApi: "https://zohairazmat-supportpilot-ai-fte-v2.hf.space/docs",
+      github: "https://github.com/zohair-azmat-ai/Supportpilot-Ai-Digital-Fte",
     },
     features: [
       "Production-grade SaaS UI",
