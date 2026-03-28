@@ -11,14 +11,14 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[680px] md:min-h-[720px] overflow-hidden py-20 sm:py-28 lg:py-32">
+    <section className="relative min-h-[720px] overflow-hidden py-20 sm:py-28 lg:py-32">
 
       {/* ── Full background image ── */}
       <img
         src="/profile.png"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-[70%_40%] brightness-90 scale-[0.95]"
+        className="absolute inset-0 w-full h-full object-cover object-[70%_42%] brightness-90"
       />
 
       {/* ── Gradient overlay for readability ── */}
