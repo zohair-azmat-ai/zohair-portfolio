@@ -30,22 +30,20 @@ A modern, production-style personal portfolio built to showcase AI SaaS projects
 
 ## 🧠 Architecture
 
-```
-                        ┌─────────────────────────────────────────┐
-                        │           Next.js Frontend              │
-                        │     (App Router · TypeScript · TW CSS)  │
-                        └──────────────────┬──────────────────────┘
-                                           │
-                                    API Layer (REST)
-                                           │
-                        ┌──────────────────▼──────────────────────┐
-                        │           FastAPI Backend               │
-                        └──────────┬───────────────┬─────────────┘
-                                   │               │
-               ┌───────────────────▼──┐    ┌───────▼──────────────┐
-               │      PostgreSQL      │    │      OpenAI API       │
-               │  (Persistent Data)   │    │  (LLM Responses)      │
-               └──────────────────────┘    └──────────────────────┘
+```mermaid
+flowchart LR
+    A[User] --> B[Next.js Frontend]
+    B --> C[API Layer]
+    C --> D[FastAPI Backend]
+    D --> E[PostgreSQL Database]
+    D --> F[OpenAI API]
+
+    style A fill:#1f2937,color:#fff
+    style B fill:#0ea5e9,color:#fff
+    style C fill:#6366f1,color:#fff
+    style D fill:#10b981,color:#fff
+    style E fill:#f59e0b,color:#000
+    style F fill:#ef4444,color:#fff
 ```
 
 ---
