@@ -6,6 +6,16 @@ A modern, production-style personal portfolio built to showcase AI SaaS projects
 
 ---
 
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+---
+
 ## 🛠 Tech Stack
 
 | Layer | Technology |
@@ -15,6 +25,28 @@ A modern, production-style personal portfolio built to showcase AI SaaS projects
 | Database (Projects) | PostgreSQL |
 | AI (Projects) | OpenAI API |
 | Deployment | Vercel |
+
+---
+
+## 🧠 Architecture
+
+```
+                        ┌─────────────────────────────────────────┐
+                        │           Next.js Frontend              │
+                        │     (App Router · TypeScript · TW CSS)  │
+                        └──────────────────┬──────────────────────┘
+                                           │
+                                    API Layer (REST)
+                                           │
+                        ┌──────────────────▼──────────────────────┐
+                        │           FastAPI Backend               │
+                        └──────────┬───────────────┬─────────────┘
+                                   │               │
+               ┌───────────────────▼──┐    ┌───────▼──────────────┐
+               │      PostgreSQL      │    │      OpenAI API       │
+               │  (Persistent Data)   │    │  (LLM Responses)      │
+               └──────────────────────┘    └──────────────────────┘
+```
 
 ---
 
