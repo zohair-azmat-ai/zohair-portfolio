@@ -66,9 +66,9 @@ export const projects: Project[] = [
       "A production-style AI SaaS platform built to simulate and automate real customer support operations. It includes intelligent ticket handling, LLM-powered responses, multi-channel communication workflows, analytics, escalation systems, and structured event logging inside a modern SaaS architecture.",
     tags: ["Next.js", "FastAPI", "PostgreSQL", "OpenAI", "Tailwind CSS"],
     links: {
-      liveFrontend: "https://your-frontend-link.com",
-      liveApi: "https://your-api-link.com",
-      github: "https://github.com/yourusername/supportpilot-ai",
+      liveFrontend: "https://supportpilot-ai-digital-fte.vercel.app/",
+      liveApi: "https://supportpilot-ai-digital-fte.vercel.app/",
+      github: "https://github.com/zohair-azmat-ai/zohair-portfolio",
     },
     features: [
       "Production-grade SaaS UI",
