@@ -18,7 +18,7 @@ export default function HeroSection() {
         src="/profile.png"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-[108%] -top-[8%] object-cover object-[72%_0%] brightness-90"
+        className="absolute inset-0 w-full h-[115%] -top-[15%] object-cover object-[72%_0%] brightness-90"
       />
 
       {/* ── Gradient overlay for readability ── */}
