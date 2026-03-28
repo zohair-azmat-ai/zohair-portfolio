@@ -7,9 +7,9 @@ export const siteConfig = {
     "I build modern AI SaaS products with real-world architecture, scalable backend systems, intelligent workflows, and polished frontend experiences.",
   about:
     "Zohair Azmat is an AI SaaS developer focused on building production-grade applications that combine strong backend architecture, modern frontend systems, and real-world AI functionality. His work spans intelligent support systems, full-stack productivity tools, and high-quality interactive interfaces using Next.js, FastAPI, PostgreSQL, OpenAI, and Tailwind CSS.",
-  email: "zohair@example.com",
+  email: "zohairazmat@gmail.com",
   github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/your-linkedin",
+  linkedin: "https://www.linkedin.com/in/zohair-azmat-991aa53b8",
 };
 
 // ─── Skills ─────────────────────────────────────────────────────────────────

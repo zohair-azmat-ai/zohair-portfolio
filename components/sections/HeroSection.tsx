@@ -17,7 +17,7 @@ export default function HeroSection() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-0 flex justify-center"
       >
-        <div className="h-[480px] w-[800px] rounded-full bg-blue-500/5 blur-[120px] dark:bg-indigo-500/10" />
+        <div className="h-[480px] w-[800px] rounded-full bg-indigo-500/10 blur-[120px]" />
       </div>
 
       <Container>
@@ -25,7 +25,7 @@ export default function HeroSection() {
 
           {/* Badge */}
           <div className="flex animate-fade-up">
-            <span className="inline-flex items-center gap-2.5 rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-zinc-500 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-400">
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-widest text-zinc-400 shadow-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
@@ -36,19 +36,19 @@ export default function HeroSection() {
 
           {/* Heading */}
           <div className="flex flex-col gap-3 animate-fade-up animation-delay-100">
-            <p className="text-sm font-medium text-zinc-400 dark:text-zinc-500">
+            <p className="text-sm font-medium text-zinc-500">
               Hi, I&apos;m
             </p>
-            <h1 className="text-5xl font-extrabold tracking-tight text-zinc-900 sm:text-6xl lg:text-[72px] lg:leading-[1.08] dark:text-white">
+            <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-[72px] lg:leading-[1.08]">
               {siteConfig.name}
             </h1>
-            <p className="max-w-2xl bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-xl font-semibold text-transparent sm:text-2xl dark:from-blue-400 dark:to-violet-400">
+            <p className="max-w-2xl bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-xl font-semibold text-transparent sm:text-2xl">
               {siteConfig.title}
             </p>
           </div>
 
           {/* Description */}
-          <p className="animate-fade-up animation-delay-200 max-w-xl text-base leading-loose text-zinc-600 dark:text-zinc-400 sm:text-lg">
+          <p className="animate-fade-up animation-delay-200 max-w-xl text-base leading-loose text-zinc-400 sm:text-lg">
             {siteConfig.description}
           </p>
 
@@ -70,11 +70,11 @@ export default function HeroSection() {
           <div className="animate-fade-up animation-delay-400 flex flex-wrap items-center gap-x-5 gap-y-3 pt-1">
             {stats.map((label, i) => (
               <Fragment key={label}>
-                <span className="text-[11px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-600">
+                <span className="text-[11px] font-semibold uppercase tracking-widest text-zinc-600">
                   {label}
                 </span>
                 {i < stats.length - 1 && (
-                  <span className="h-3 w-px shrink-0 bg-zinc-300 dark:bg-zinc-700" />
+                  <span className="h-3 w-px shrink-0 bg-zinc-700" />
                 )}
               </Fragment>
             ))}

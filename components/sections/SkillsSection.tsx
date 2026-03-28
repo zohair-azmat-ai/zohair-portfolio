@@ -13,24 +13,24 @@ const categoryAccent: Record<string, AccentConfig> = {
   "Frontend": {
     dot: "bg-blue-500",
     bar: "bg-blue-500",
-    label: "text-blue-600 dark:text-blue-400",
+    label: "text-blue-400",
   },
   "Backend & AI": {
     dot: "bg-violet-500",
     bar: "bg-violet-500",
-    label: "text-violet-600 dark:text-violet-400",
+    label: "text-violet-400",
   },
   "Data & Systems": {
     dot: "bg-emerald-500",
     bar: "bg-emerald-500",
-    label: "text-emerald-600 dark:text-emerald-400",
+    label: "text-emerald-400",
   },
 };
 
 const fallback: AccentConfig = {
   dot: "bg-zinc-500",
   bar: "bg-zinc-500",
-  label: "text-zinc-500",
+  label: "text-zinc-400",
 };
 
 export default function SkillsSection() {
@@ -49,7 +49,7 @@ export default function SkillsSection() {
             return (
               <div
                 key={group.category}
-                className="relative overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900/60"
+                className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6"
               >
                 {/* Top accent bar */}
                 <div className={`absolute inset-x-0 top-0 h-0.5 ${accent.bar}`} />
