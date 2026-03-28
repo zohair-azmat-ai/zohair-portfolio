@@ -73,10 +73,10 @@ export default function HeroSection() {
           </div>
 
           {/* Mini stats */}
-          <div className="animate-fade-up animation-delay-400 flex flex-wrap items-center gap-x-5 gap-y-2">
+          <div className="animate-fade-up animation-delay-400 flex flex-wrap gap-4">
             {stats.map((label, i) => (
               <Fragment key={label}>
-                <span className="text-sm font-medium text-blue-400 opacity-90">
+                <span className="text-sm md:text-base font-medium text-blue-400/90 tracking-wide">
                   {label}
                 </span>
                 {i < stats.length - 1 && (
