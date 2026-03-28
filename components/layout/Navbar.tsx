@@ -29,12 +29,12 @@ export default function Navbar() {
           </a>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-7 sm:flex">
+          <nav className="hidden items-center gap-8 sm:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[13px] font-medium text-zinc-400 transition-colors hover:text-zinc-100"
+                className="text-sm md:text-base font-medium text-white/85 transition-colors hover:text-white"
               >
                 {link.label}
               </a>
