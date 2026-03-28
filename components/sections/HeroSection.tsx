@@ -17,7 +17,7 @@ export default function HeroSection() {
       <img
         src="/profile.png"
         alt="Zohair Azmat"
-        className="absolute inset-x-0 -top-[26%] w-full h-[132%] object-cover object-[72%_0%] brightness-90"
+        className="absolute inset-x-0 -top-[30%] w-full h-[138%] object-cover object-[72%_2%] brightness-90"
       />
 
       {/* ── Gradient overlay for readability ── */}
