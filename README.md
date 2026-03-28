@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zohair Azmat — AI SaaS Engineer Portfolio
 
-## Getting Started
+A modern, production-style personal portfolio built to showcase AI SaaS projects, full-stack engineering work, and real-world product thinking.
 
-First, run the development server:
+🔗 **Live:** [your-vercel-url.vercel.app](https://your-vercel-url.vercel.app) &nbsp;|&nbsp; 📂 **Repo:** [github.com/zohair-azmat-ai/zohair-portfolio](https://github.com/zohair-azmat-ai/zohair-portfolio)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 16 (App Router), TypeScript, Tailwind CSS |
+| Backend (Projects) | FastAPI, Python |
+| Database (Projects) | PostgreSQL |
+| AI (Projects) | OpenAI API |
+| Deployment | Vercel |
+
+---
+
+## ✨ Features
+
+- **Premium UI** — dark-first design with glass navbar, ambient glows, and smooth entrance animations
+- **Fully responsive** — mobile-first layout, works across all screen sizes
+- **Flagship project showcase** — SupportPilot AI presented as a full SaaS case study with screen mockups
+- **Data-driven content** — all portfolio content managed from a single `data/portfolio.ts` file
+- **Reusable component system** — `Badge`, `Button`, `ProjectCard`, `SectionCard`, `Container`, `SectionHeading`
+- **SEO ready** — full metadata, OpenGraph, and Twitter card support
+- **Smooth scroll navigation** — sticky navbar with anchor links and scroll-padding offset
+
+---
+
+## 🚀 Projects
+
+### SupportPilot AI — Digital Customer Support FTE *(Flagship)*
+A production-style AI SaaS platform that automates customer support operations. Features LLM-powered responses, ticketing, multi-channel communication (WhatsApp, email), admin and customer portals, analytics, and escalation logic.
+
+`Next.js` `FastAPI` `PostgreSQL` `OpenAI` `Tailwind CSS`
+
+---
+
+### AI Task Manager
+Full-stack AI productivity assistant with chatbot-driven task workflows, built on Next.js, FastAPI, and OpenAI.
+
+`Next.js` `FastAPI` `OpenAI` `Tailwind CSS`
+
+---
+
+### Zohair Racing Portfolio
+Creative browser-based racing-inspired interface focused on immersive UI and polished frontend interactions.
+
+`Next.js` `Tailwind CSS` `Animations`
+
+---
+
+## 📁 Folder Structure
+
+```
+zohair-portfolio/
+├── app/
+│   ├── layout.tsx          # Root layout, metadata, navbar
+│   ├── page.tsx            # Page entry — renders all sections
+│   └── globals.css         # Global styles, animations
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx      # Sticky glass navbar
+│   │   ├── Container.tsx   # Max-width responsive wrapper
+│   │   └── SectionHeading.tsx
+│   ├── sections/
+│   │   ├── HeroSection.tsx
+│   │   ├── AboutSection.tsx
+│   │   ├── SkillsSection.tsx
+│   │   ├── FeaturedProjectSection.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   └── ContactSection.tsx
+│   └── ui/
+│       ├── Badge.tsx
+│       ├── Button.tsx
+│       ├── ProjectCard.tsx
+│       └── SectionCard.tsx
+├── data/
+│   └── portfolio.ts        # All content: config, skills, projects
+├── lib/
+│   └── utils.ts            # cn() utility (clsx + tailwind-merge)
+└── public/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏁 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Install dependencies
+npm install
 
-## Learn More
+# Start development server
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Deployment
 
-## Deploy on Vercel
+Deployed on **Vercel** with automatic deployments on every push to `main`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy your own instance:
+1. Fork this repository
+2. Import it at [vercel.com/new](https://vercel.com/new)
+3. Vercel auto-detects Next.js — click **Deploy**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No environment variables required for the portfolio itself.
+
+---
+
+## 🔧 Customization
+
+All portfolio content lives in [`data/portfolio.ts`](data/portfolio.ts). Update `siteConfig`, `skills`, and `projects` to make it your own — no component changes needed.
+
+---
+
+*Built by [Zohair Azmat](https://github.com/zohair-azmat-ai)*
