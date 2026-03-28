@@ -88,12 +88,13 @@ export default function HeroSection() {
           {/* ── Right: profile image ── */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="absolute w-72 h-72 bg-gradient-to-r from-blue-500/30 to-violet-500/30 blur-3xl rounded-full" />
-            <div className="w-[460px] h-[460px] overflow-hidden rounded-2xl shadow-2xl shadow-blue-500/10">
+            <div className="relative w-[460px] h-[460px] overflow-hidden rounded-2xl shadow-2xl shadow-blue-500/10">
               <img
                 src="/profile.png"
                 alt="Zohair Azmat"
-                className="w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover brightness-90"
               />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
             </div>
           </div>
 
