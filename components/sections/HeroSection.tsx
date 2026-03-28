@@ -13,12 +13,12 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[720px] overflow-hidden py-20 sm:py-28 lg:py-32">
 
-      {/* ── Full background image ── */}
+      {/* ── Full background image (FIXED) ── */}
       <img
         src="/profile.png"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover object-[72%_2%] brightness-90"
+        className="absolute inset-0 w-full h-[108%] -top-[8%] object-cover object-[72%_0%] brightness-90"
       />
 
       {/* ── Gradient overlay for readability ── */}
@@ -73,7 +73,7 @@ export default function HeroSection() {
             </Button>
           </div>
 
-          {/* Mini stats strip */}
+          {/* Mini stats */}
           <div className="animate-fade-up animation-delay-400 flex flex-wrap items-center gap-x-5 gap-y-3 pt-1">
             {stats.map((label, i) => (
               <Fragment key={label}>
