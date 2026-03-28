@@ -97,7 +97,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "FastAPI", "OpenAI", "Tailwind CSS"],
     label: "AI Productivity App",
     links: {
-      live: "https://your-task-manager-link.com",
+      live: "https://taskai-zohair.vercel.app/",
     },
   },
   {
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind CSS", "Animations"],
     label: "Creative Frontend",
     links: {
-      live: "https://your-racing-link.com",
+      live: "https://zohair-racing-portfolio.vercel.app/",
     },
   },
 ];
