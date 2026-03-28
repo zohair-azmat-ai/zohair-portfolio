@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/layout/SectionHeading";
 import Badge from "@/components/ui/Badge";
@@ -10,110 +11,6 @@ const callouts = [
   "Admin Analytics",
   "Escalation Engine",
 ];
-
-// ─── Screen Mockup Components ─────────────────────────────────────────────────
-
-type MockupType = "dashboard" | "portal" | "analytics";
-
-const mockupUrls: Record<MockupType, string> = {
-  dashboard: "app/dashboard",
-  portal:    "portal/tickets",
-  analytics: "admin/analytics",
-};
-
-function DashboardSkeleton() {
-  return (
-    <div className="flex flex-1 overflow-hidden">
-      {/* Sidebar */}
-      <div className="flex w-10 shrink-0 flex-col gap-2 border-r border-zinc-700/40 p-2">
-        {[...Array(5)].map((_, i) => (
-          <div
-            key={i}
-            className="h-1.5 rounded bg-zinc-700/60"
-            style={{ width: i % 2 === 0 ? "100%" : "60%" }}
-          />
-        ))}
-      </div>
-      {/* Main content */}
-      <div className="flex flex-1 flex-col gap-2 p-2.5">
-        <div className="h-2 w-20 rounded bg-zinc-600/80" />
-        <div className="grid grid-cols-2 gap-1.5">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="h-8 rounded-lg bg-zinc-700/50" />
-          ))}
-        </div>
-        <div className="h-1.5 w-14 rounded bg-zinc-600/80" />
-        <div className="flex-1 rounded-lg bg-zinc-700/40" />
-      </div>
-    </div>
-  );
-}
-
-function PortalSkeleton() {
-  return (
-    <div className="flex flex-1 flex-col gap-1.5 overflow-hidden p-2.5">
-      <div className="h-1.5 w-14 rounded bg-zinc-600/80" />
-      {[...Array(3)].map((_, i) => (
-        <div
-          key={i}
-          className="flex items-start gap-1.5 rounded-lg border border-zinc-700/40 bg-zinc-800/40 p-1.5"
-        >
-          <div className="mt-0.5 h-3 w-3 shrink-0 rounded-full bg-zinc-700/60" />
-          <div className="flex flex-1 flex-col gap-1">
-            <div className="h-1.5 w-10 rounded bg-zinc-700/60" />
-            <div className="h-1.5 w-full rounded bg-zinc-700/30" />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function AnalyticsSkeleton() {
-  const bars = [42, 68, 55, 88, 61, 74, 50];
-  return (
-    <div className="flex flex-1 flex-col gap-1.5 overflow-hidden p-2.5">
-      <div className="h-1.5 w-14 rounded bg-zinc-600/80" />
-      <div className="grid grid-cols-3 gap-1">
-        {[...Array(3)].map((_, i) => (
-          <div key={i} className="h-5 rounded bg-zinc-700/50" />
-        ))}
-      </div>
-      <div className="flex flex-1 items-end gap-1 pt-1">
-        {bars.map((h, i) => (
-          <div
-            key={i}
-            className="flex-1 rounded-t bg-blue-500/35"
-            style={{ height: `${h}%` }}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function ScreenMockup({ type }: { type: MockupType }) {
-  return (
-    <div className="flex h-full w-full flex-col overflow-hidden rounded-xl border border-zinc-700/50 bg-zinc-800/80">
-      {/* Browser chrome */}
-      <div className="flex shrink-0 items-center gap-1.5 border-b border-zinc-700/50 bg-zinc-900/80 px-3 py-2">
-        <span className="h-2 w-2 rounded-full bg-red-400/80" />
-        <span className="h-2 w-2 rounded-full bg-yellow-400/80" />
-        <span className="h-2 w-2 rounded-full bg-green-400/80" />
-        <span className="ml-2 truncate text-[9px] tracking-wide text-zinc-500">
-          supportpilot.ai/{mockupUrls[type]}
-        </span>
-      </div>
-
-      {/* Content skeleton */}
-      {type === "dashboard" && <DashboardSkeleton />}
-      {type === "portal"    && <PortalSkeleton />}
-      {type === "analytics" && <AnalyticsSkeleton />}
-    </div>
-  );
-}
-
-// ─── Section ─────────────────────────────────────────────────────────────────
 
 export default function FeaturedProjectSection() {
   return (
@@ -229,25 +126,40 @@ export default function FeaturedProjectSection() {
 
             </div>
 
-            {/* ── Right: screen mockups ── */}
+            {/* ── Right: real screenshots ── */}
             <div className="flex flex-col gap-3 lg:col-span-2">
 
-              <div className="aspect-[4/3] w-full">
-                <ScreenMockup type="dashboard" />
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 shadow-xl">
+                <Image
+                  src="/admin.png"
+                  alt="SupportPilot Admin Dashboard"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <div className="aspect-video">
-                  <ScreenMockup type="portal" />
+                <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 shadow-xl">
+                  <Image
+                    src="/tickets.png"
+                    alt="SupportPilot Tickets Portal"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <div className="aspect-video">
-                  <ScreenMockup type="analytics" />
+                <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 shadow-xl">
+                  <Image
+                    src="/analytics.png"
+                    alt="SupportPilot Analytics"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
 
               <div className="grid grid-cols-3 gap-1 text-center">
                 <p className="text-[10px] font-medium text-zinc-600">Admin Dashboard</p>
-                <p className="text-[10px] font-medium text-zinc-600">Customer Portal</p>
+                <p className="text-[10px] font-medium text-zinc-600">Tickets Portal</p>
                 <p className="text-[10px] font-medium text-zinc-600">Analytics</p>
               </div>
 
