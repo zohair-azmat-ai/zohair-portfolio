@@ -88,7 +88,7 @@ export default function HeroSection() {
           {/* ── Right: profile image ── */}
           <div className="relative flex justify-center lg:justify-end">
             <div className="absolute w-72 h-72 bg-gradient-to-r from-blue-500/30 to-violet-500/30 blur-3xl rounded-full" />
-            <div className="relative w-[400px] h-[400px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <div className="relative w-[460px] h-[460px] mt-4 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <img
                 src="/profile.png"
                 alt="Zohair Azmat"
