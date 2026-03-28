@@ -11,7 +11,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden min-h-[620px] lg:min-h-[650px]">
+    <section className="relative overflow-hidden min-h-[560px] lg:min-h-[600px]">
 
       {/* ── Full background image (FIXED) ── */}
       <img
@@ -73,10 +73,10 @@ export default function HeroSection() {
           </div>
 
           {/* Mini stats */}
-          <div className="animate-fade-up animation-delay-400 flex flex-wrap items-center gap-x-5 gap-y-3 pt-1">
+          <div className="animate-fade-up animation-delay-400 flex flex-wrap items-center gap-x-5 gap-y-2">
             {stats.map((label, i) => (
               <Fragment key={label}>
-                <span className="mt-6 text-sm font-medium text-blue-400 opacity-90">
+                <span className="text-sm font-medium text-blue-400 opacity-90">
                   {label}
                 </span>
                 {i < stats.length - 1 && (

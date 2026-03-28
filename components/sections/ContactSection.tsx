@@ -31,7 +31,7 @@ const contactMethods = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-16 pb-32">
+    <section id="contact" className="py-12 pb-24">
       <Container>
         <SectionHeading
           eyebrow="Let's Connect"
@@ -58,7 +58,7 @@ export default function ContactSection() {
               <a
                 key={method.label}
                 href={method.href}
-                className="group flex flex-col gap-4 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 transition-all hover:-translate-y-0.5 hover:border-zinc-700 hover:shadow-sm"
+                className="group flex flex-col gap-4 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-5 transition-all duration-200 hover:-translate-y-1 hover:border-zinc-600 hover:bg-zinc-800/70 hover:shadow-lg hover:shadow-black/30"
               >
                 {/* Label row */}
                 <div className="flex items-center justify-between">

@@ -134,7 +134,7 @@ export default function FeaturedProjectSection() {
             {/* ── Right: real screenshots ── */}
             <div className="flex flex-col gap-3 lg:col-span-2">
 
-              <div className="h-[280px] w-full overflow-hidden rounded-xl border border-white/10">
+              <div className="h-[300px] w-full overflow-hidden rounded-xl border border-white/10">
                 <img
                   src="/admin.png"
                   alt="SupportPilot Admin Dashboard"
@@ -143,14 +143,14 @@ export default function FeaturedProjectSection() {
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <div className="h-[150px] overflow-hidden rounded-xl border border-white/10">
+                <div className="h-[165px] overflow-hidden rounded-xl border border-white/10">
                   <img
                     src="/tickets.png"
                     alt="SupportPilot Tickets Portal"
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
-                <div className="h-[150px] overflow-hidden rounded-xl border border-white/10">
+                <div className="h-[165px] overflow-hidden rounded-xl border border-white/10">
                   <img
                     src="/analytics.png"
                     alt="SupportPilot Analytics"
