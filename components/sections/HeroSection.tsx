@@ -11,14 +11,13 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[720px] overflow-hidden py-20 sm:py-28 lg:py-32">
+    <section className="relative overflow-hidden min-h-[620px] lg:min-h-[650px] py-20 sm:py-28 lg:py-32">
 
       {/* ── Full background image (FIXED) ── */}
       <img
         src="/profile.png"
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-[115%] -top-[15%] object-cover object-[72%_0%] brightness-90"
+        alt="Zohair Azmat"
+        className="absolute inset-x-0 -top-[18%] w-full h-[120%] object-cover object-[72%_0%] brightness-90"
       />
 
       {/* ── Gradient overlay for readability ── */}
