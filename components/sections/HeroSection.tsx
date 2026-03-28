@@ -93,9 +93,9 @@ export default function HeroSection() {
             <Image
               src="/profile.png"
               alt="Zohair Azmat"
-              width={300}
-              height={300}
-              className="relative rounded-full border border-white/10 shadow-xl"
+              width={420}
+              height={420}
+              className="relative rounded-2xl object-cover border border-zinc-800 shadow-xl"
             />
           </div>
 
