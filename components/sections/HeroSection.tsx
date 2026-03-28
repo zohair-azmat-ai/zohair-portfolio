@@ -76,7 +76,7 @@ export default function HeroSection() {
           <div className="animate-fade-up animation-delay-400 flex flex-wrap items-center gap-x-5 gap-y-3 pt-1">
             {stats.map((label, i) => (
               <Fragment key={label}>
-                <span className="text-[11px] font-semibold uppercase tracking-widest text-zinc-500">
+                <span className="mt-6 text-sm font-medium bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent opacity-90">
                   {label}
                 </span>
                 {i < stats.length - 1 && (
