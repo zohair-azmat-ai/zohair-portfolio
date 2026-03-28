@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/layout/SectionHeading";
 import Badge from "@/components/ui/Badge";
@@ -129,30 +128,27 @@ export default function FeaturedProjectSection() {
             {/* ── Right: real screenshots ── */}
             <div className="flex flex-col gap-3 lg:col-span-2">
 
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 shadow-xl">
-                <Image
+              <div className="h-[250px] w-full overflow-hidden rounded-xl border border-white/10">
+                <img
                   src="/admin.png"
                   alt="SupportPilot Admin Dashboard"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover rounded-xl"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-3">
-                <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 shadow-xl">
-                  <Image
+                <div className="h-[130px] overflow-hidden rounded-xl border border-white/10">
+                  <img
                     src="/tickets.png"
                     alt="SupportPilot Tickets Portal"
-                    fill
-                    className="object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
-                <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 shadow-xl">
-                  <Image
+                <div className="h-[130px] overflow-hidden rounded-xl border border-white/10">
+                  <img
                     src="/analytics.png"
                     alt="SupportPilot Analytics"
-                    fill
-                    className="object-cover"
+                    className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
               </div>

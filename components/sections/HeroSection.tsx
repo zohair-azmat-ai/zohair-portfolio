@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import { siteConfig } from "@/data/portfolio";
@@ -88,15 +87,14 @@ export default function HeroSection() {
 
           {/* ── Right: profile image ── */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="absolute w-72 h-72 bg-gradient-to-r from-blue-500/30 to-violet-500/30 blur-3xl rounded-full"></div>
-
-            <Image
-              src="/profile.png"
-              alt="Zohair Azmat"
-              width={420}
-              height={420}
-              className="relative rounded-2xl object-cover border border-zinc-800 shadow-xl"
-            />
+            <div className="absolute w-72 h-72 bg-gradient-to-r from-blue-500/30 to-violet-500/30 blur-3xl rounded-full" />
+            <div className="w-[400px] h-[400px] overflow-hidden rounded-2xl border border-white/10">
+              <img
+                src="/profile.png"
+                alt="Zohair Azmat"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
         </div>
