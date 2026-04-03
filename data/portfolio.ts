@@ -110,6 +110,15 @@ export const projects: Project[] = [
     },
   },
   {
+    title: "Nexus AI Orchestrator",
+    description:
+      "A production-grade AI orchestration system with multi-agent workflows, memory layers, RAG retrieval, and full observability. Designed for scalable, intelligent AI systems with real-time decision pipelines.",
+    tags: ["Next.js", "FastAPI", "OpenAI", "Qdrant", "PostgreSQL", "Docker"],
+    links: {
+      live: "https://nexus-ai-orchestrator.vercel.app/",
+    },
+  },
+  {
     title: "Zohair Racing Portfolio",
     description:
       "A creative browser-based racing-inspired interface focused on smooth motion, immersive UI, and polished frontend interactions.",
