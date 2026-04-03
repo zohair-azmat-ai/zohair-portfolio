@@ -2,7 +2,7 @@
 
 A modern, production-style personal portfolio built to showcase AI SaaS projects, full-stack engineering work, and real-world product thinking.
 
-🔗 **Live:** [your-vercel-url.vercel.app](https://your-vercel-url.vercel.app) &nbsp;|&nbsp; 📂 **Repo:** [github.com/zohair-azmat-ai/zohair-portfolio](https://github.com/zohair-azmat-ai/zohair-portfolio)
+🔗 Live: https://zohair-portfolio-topaz.vercel.app/ | 📁 Repo: https://github.com/zohair-azmat-ai/zohair-portfolio
 
 ---
 
