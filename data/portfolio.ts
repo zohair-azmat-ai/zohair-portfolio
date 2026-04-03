@@ -62,30 +62,12 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Aurevia Estate AI",
-    label: "AI-powered real estate automation platform",
     description:
-      "A premium AI-powered real estate SaaS platform that captures, qualifies, and converts leads automatically. It integrates WhatsApp, email, and website channels, uses GPT-4o for intelligent responses, and updates CRM workflows in real-time. Designed with a luxury UI and production-level architecture.",
+      "A premium AI-powered real estate automation platform that captures, qualifies, and converts leads automatically. It integrates WhatsApp, email, and website channels, uses GPT-4o for intelligent responses, and updates CRM workflows in real-time.",
     tags: ["Next.js", "FastAPI", "OpenAI API", "PostgreSQL", "Tailwind CSS"],
     links: {
-      liveFrontend: "https://aurevia-estate-ai.vercel.app/",
+      live: "https://aurevia-estate-ai.vercel.app/",
     },
-    features: [
-      "AI lead qualification",
-      "Multi-channel integration (WhatsApp, email, web)",
-      "Real-time AI responses (GPT-4o)",
-      "Automated CRM updates",
-      "Smart follow-ups and deal tracking",
-      "Premium UI/UX design",
-    ],
-    screenshots: {
-      desktop: "/analytics.png",
-      mobile: "/admin.png",
-      dashboard: "/tickets.png",
-      desktopLabel: "Lead Intelligence",
-      mobileLabel: "Automation Workspace",
-      dashboardLabel: "Deal Tracking",
-    },
-    featured: true,
   },
   {
     title: "SupportPilot AI — Digital Customer Support FTE",
@@ -115,6 +97,7 @@ export const projects: Project[] = [
       mobile: undefined,
       dashboard: undefined,
     },
+    featured: true,
   },
   {
     title: "AI Task Manager",
