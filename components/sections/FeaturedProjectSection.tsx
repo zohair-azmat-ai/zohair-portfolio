@@ -4,12 +4,7 @@ import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import { featuredProject } from "@/data/portfolio";
 
-const callouts = [
-  "Multi-channel Support",
-  "AI-powered Workflows",
-  "Admin Analytics",
-  "Escalation Engine",
-];
+const callouts = featuredProject.features?.slice(0, 4) ?? [];
 
 export default function FeaturedProjectSection() {
   return (
@@ -47,6 +42,12 @@ export default function FeaturedProjectSection() {
               <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
                 {featuredProject.title}
               </h3>
+
+              {featuredProject.label && (
+                <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-zinc-500">
+                  {featuredProject.label}
+                </p>
+              )}
 
               <p className="text-[15px] leading-relaxed text-zinc-400">
                 {featuredProject.description}
@@ -136,8 +137,8 @@ export default function FeaturedProjectSection() {
 
               <div className="h-[320px] w-full overflow-hidden rounded-xl border border-white/10">
                 <img
-                  src="/admin.png"
-                  alt="SupportPilot Admin Dashboard"
+                  src={featuredProject.screenshots?.desktop ?? "/admin.png"}
+                  alt={`${featuredProject.title} preview`}
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
@@ -145,24 +146,30 @@ export default function FeaturedProjectSection() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="h-[180px] overflow-hidden rounded-xl border border-white/10">
                   <img
-                    src="/tickets.png"
-                    alt="SupportPilot Tickets Portal"
+                    src={featuredProject.screenshots?.mobile ?? "/tickets.png"}
+                    alt={`${featuredProject.title} secondary preview`}
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
                 <div className="h-[180px] overflow-hidden rounded-xl border border-white/10">
                   <img
-                    src="/analytics.png"
-                    alt="SupportPilot Analytics"
+                    src={featuredProject.screenshots?.dashboard ?? "/analytics.png"}
+                    alt={`${featuredProject.title} analytics preview`}
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-3 gap-1 text-center">
-                <p className="text-[10px] font-medium text-zinc-600">Admin Dashboard</p>
-                <p className="text-[10px] font-medium text-zinc-600">Tickets Portal</p>
-                <p className="text-[10px] font-medium text-zinc-600">Analytics</p>
+                <p className="text-[10px] font-medium text-zinc-600">
+                  {featuredProject.screenshots?.desktopLabel ?? "Main Preview"}
+                </p>
+                <p className="text-[10px] font-medium text-zinc-600">
+                  {featuredProject.screenshots?.mobileLabel ?? "Secondary Preview"}
+                </p>
+                <p className="text-[10px] font-medium text-zinc-600">
+                  {featuredProject.screenshots?.dashboardLabel ?? "Analytics"}
+                </p>
               </div>
 
             </div>
