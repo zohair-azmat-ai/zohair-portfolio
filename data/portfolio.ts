@@ -119,6 +119,15 @@ export const projects: Project[] = [
     },
   },
   {
+    title: "We Are Kids Nursery LMS & Live",
+    description:
+      "A production-grade nursery LMS and live classroom platform with role-based access for admin, teachers, assistants, and students. Includes secure authentication, dashboard workflows, and real-time online class capabilities for structured learning environments.",
+    tags: ["Next.js", "FastAPI", "PostgreSQL", "Tailwind CSS", "WebRTC", "LMS", "Role-Based Access"],
+    links: {
+      live: "https://we-are-kids-lms-live.vercel.app/",
+    },
+  },
+  {
     title: "Zohair Racing Portfolio",
     description:
       "A creative browser-based racing-inspired interface focused on smooth motion, immersive UI, and polished frontend interactions.",
